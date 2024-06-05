@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>My Personal Website</title>
+    <style type="text/css">
+
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        body {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWY4MmpoM2lyeHBtNTNmd2Z2YmFpdzRmcmFqNzAycGg2bHdwc3Z5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FlodpfQUBSp20/giphy.gif');
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #logo-container img {
+            max-height: 50px;
+            width: auto;
+        }
+
+/* Navigation styles */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; /* Make the navigation text bold */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #E55089;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background on hover */
+    border-radius: 5px; /* Maintain border-radius on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                margin-top: 10px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; /* Center align items */
+            }
+            .navbar li {
+                margin: 5px 0;
+            }
+        }
+
+       /* Content styles */
+       .content {
+              max-width: 1000px;
+              margin: 0 auto;
+              text-align: center;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+        }
+
+        .section img, .section video {
+            max-width: 45%; /* Increased width for larger display */
+            border-radius: 10px;
+        }
+
+        .section .text {
+            flex: 1;
+            margin-left: auto; /* Align to the right */
+            margin-right: auto; /* Align to the left */
+            max-width: 600px; /* Limit width to prevent stretching */
+
+        }
+
+        .title, .text h1 {
+           font-size: 2em;
+           margin-bottom: 20px;
+           color: #E55089; /* Pink color for heading */
+           font-weight: bold;
+        }
+
+        .section h2 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #ffffff; /* Ensure text is visible on the background */
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            text-align: left;
+            list-style-type: none;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ffffff;
+            background-color: transparent; /* Ensure no background color */
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        footer .social-icons a:hover {
+            color: #E55089;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        /* Music styles */
+        .music-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .music-section h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #E55089; /* Pink color for heading */
+            font-weight: bold;
+        }
+
+        .music-section ul {
+            list-style-type: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .music-section ul li {
+            margin-bottom: 10px;
+            color: #ffffff; /* Ensure text is visible on the background */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Zaffy Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="family.html">
+Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1 class="title">˚ʚ♡ɞ˚About Me˚ʚ♡ɞ˚</h1>
+        <div class="section">
+            <div class="text">
+                <h2>♡Zafirah's Biodata♡</h2>
+                <ul>
+                    <li><b>Name:</b> Nurul Zafirah</li>
+                    <li><b>Date of Birth:</b> April 3, 2004</li>
+                    <li><b>Born place:</b> Hospital Pakar Sultanah Fatimah</li>
+                    <li><b>Nationality:</b> Malaysian</li>
+                    <li><b>Lives in:</b> Tangkak, Johor</li>
+                    <li><b>Height:</b> 156 cm</li>
+                    <li><b>Occupation:</b> Student</li>
+                    <li><b>Study:</b> Universiti Teknologi MARA (UiTM)</li>
+                    <li><b>Course:</b> Library Informatics</li>
+                    <li><b>Hobbies:</b> Art, Music</li>
+                    <li><b>MBTI:</b> INFP</li>
+                    <li><b>Personal Interests:</b> Drawing, Paintings, Baking, Making video, and Traveling</li>
+                    <li><b>Favorite Quote:</b> "Why do we need to learn math when we have a calculator" - Soobin (TXT)</li>
+                </ul>
+            </div>
+            <img src="image/zaf1.png" alt="Zafirah">
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h1>♡Video♡</h1>
+                <h2>A simple video to introduce myself</h2>
+         </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zuLTZ7zdJJk?si=WoiwZWYjhBW46NnL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Music Section -->
+        <div class="music-section" style="margin: 0 auto;">
+            <h1 style="color: #E55089;">♡MY FAVOURITE TUNES♡</h1>
+            <h3 style="font-weight: bold;">Click the text to hear it</h3>
+            <ul style="text-align: center;">
+               <li><a href="audio/pujaanku.mp3">Pujaanku - Masdo</a></li>
+               <li><a href="audio/fly-up.mp3">Fly Up - Lookism</a></li>
+               <li><a href="audio/betelgeuse.mp3">Betelgeuse - Yuuri</a></li>
+               <li><a href="audio/watch-me-woo.mp3">Watch Me WOO - Plave</a></li>
+               <li><a href="audio/hitori-no-yoru.mp3">Hitori No Yoru - Tomorrow X Together</a></li>
+            </ul>
+        </div>
+        <!-- End of Music Section -->
+
+
+    </div>
+
+    <footer class="w3-container w3-center" style="padding: 8px;">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nurul-zafirah-nazaruddin-6a32062b7/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/zaffieegyu/"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/ZafirahNazaruddin"><i class="fa fa-github"></i></a>
+        </div>
+        <p style="font-size:14px; color: white;">
+            &copy; 2024 Nurul Zafirah. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
