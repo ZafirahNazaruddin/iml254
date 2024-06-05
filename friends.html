@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>My Personal Website</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        body {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWY4MmpoM2lyeHBtNTNmd2Z2YmFpdzRmcmFqNzAycGg2bHdwc3Z5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FlodpfQUBSp20/giphy.gif');
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #logo-container img {
+            max-height: 50px;
+            width: auto;
+        }
+
+        /* Navigation styles */
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold; /* Make the navigation text bold */
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar li a:hover {
+            color: #E55089;
+            transition: background-color 0.3s ease, color 0.3s ease;
+         }
+       /* Main content styles */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #E55089;
+        }
+
+        .main-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #E55089; /* Change the color of the header text */
+        }
+
+        .friend-section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .friend-section img {
+            width: 30%; /* Adjust the width as needed */
+            max-width: 100%; /* Set maximum width to ensure responsiveness */
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+            border-radius: 10px; /* Rounded corners for images */
+        }
+        .text-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #ffffff; /* Set text color to white */
+            flex: 1;
+        }
+        .text-content h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #E55089;
+            font-weight: bold;
+        }
+        .text-content ul,
+        .text-content li {
+            color: #ffffff; /* Set text color of unordered list and list items to white */
+            margin-left: 8px;
+        }
+        .text-content ul ul {
+            list-style-type: circle;
+        }
+        .text-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ffffff; /* Set text color to white */
+        }
+        .text-content a img {
+            width: 30px; /* Adjust the width of the social media icons */
+            margin-right: 10px; /* Space between icons */
+        }
+        .text-content b img {
+            width: 40px; /* Adjust the width of the social media icons */
+            margin-right: 10px; /* Space between icons */
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ffffff;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar {
+                margin-top: 10px;
+            }
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar li {
+                margin: 5px 0;
+            }
+            .friend-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .friend-section img {
+                margin-bottom: 20px;
+                margin-right: 0; /* Remove right margin for images */
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo-container">
+        <a href="index.html"><img src="image/logo.png" alt="Zaffy Logo"></a>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <h1 class="main-content">˚ʚ♡ɞ˚MY BESTIES˚ʚ♡ɞ˚</h1>
+
+    <div class="friend-section">
+        <img class="education-image" src="image/mimi.jpg" alt="Syamimie">
+        <div class="text-content">
+            <h2>Nur Hanie Syamimie's Biodata</h2>
+            <ul>
+                <li><b>Name:</b> Nur Hanie Syamimie</li>
+                <li><b>Nickname:</b> Mimi or Mim</li>
+                <li><b>Best Friend Since:</b> High School</li>
+                <li><b>High Schools Attended:</b>
+                    <ul>
+                        <li>SMA Lughatul Quran</li>
+                        <li>STMI</li>
+                    </ul>
+                </li>
+                <li><b>Current Education:</b> Studying Animation at UiTM Puncak Perdana</li>
+                <li><b>Shared Interests:</b> Anime and Art</li>
+                <li><b>Hobbies:</b>
+                    <ul>
+                        <li>Art (Commissions)</li>
+                        <li>Cosplaying</li>
+                    </ul>
+                </li>
+                <li><b>Support Her:</b> Follow her on social media to support her art and cosplay!</li>
+            </ul>
+            <br>
+            <a href="https://www.instagram.com/asakiyyy/">
+                <img src="image/instagram.png" alt="Mimi Art Instagram">
+                <p>Mimi Art Instagram</p>
+            </a>
+            <br>
+            <a href="https://www.instagram.com/wriyukiyy/">
+                <img src="image/instagram.png" alt="Mimi Cosplay Instagram">
+                <p>Mimi Cosplay Instagram</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="friend-section">
+        <img class="education-image" src="image/alee.jpg" alt="Aleeya">
+        <div class="text-content">
+            <h2>Nur Aleeya Safeeya's Biodata</h2>
+            <ul>
+                <li><b>Name:</b> Nur Aleeya Safeeya Binti Musa</li>
+                <li><b>Nickname:</b> Alee or Aleeya Saf</li>
+                <li><b>Best Friend Since:</b> High School</li>
+                <li><b>High Schools Attended:</b>
+                    <ul>
+                        <li>SMA Lughatul Quran</li>
+                    </ul>
+                </li>
+                <li><b>Current Education:</b> Politeknik Ibrahim Sultan, Pasir Gudang, Johor</li>
+                <li><b>Shared Interests:</b> Anime, Art, Cartoon and obsession over cats</li>
+                <li><b>Hobbies:</b>
+                    <ul>
+                        <li>Drawing Anime or cartoon characters</li>
+                        <li>Do a video for Social media</li>
+                    </ul>
+                <li><b>Followers and subscribers:</b>
+                    <ul>
+                        <li>34.6k subscribers on YouTube</li>
+                        <li>59.8k followers on TikTok</li>
+                        <li>1,118 followers on Instagram</li>
+                    </ul>
+                </li>
+            </ul>
+<br>
+            <a href="https://www.youtube.com/@Bdx_Oyen">
+                <img src="image/youtube.png" alt="Alee YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@areya_neko">
+                <img src="image/tiktok.png" alt="Alee TikTok">
+            </a>
+            <a href="https://www.instagram.com/_areyaxneko_/">
+                <img src="image/instagram.png" alt="Alee Instagram">
+            </a>
+        </div>
+    </div>
+
+    <div class="friend-section">
+        <img class="education-image" src="image/huda.jpg" alt="Huda">
+        <div class="text-content">
+            <h2>Nurul Huda Puteri's Biodata</h2>
+            <ul>
+                <li><b>Name:</b> Nurul Huda Puteri Bt Nuryazid</li>
+                <li><b>Nickname:</b> Huda</li>
+                <li><b>Best Friend Since </b> Primary School (Started at age 7, so currently 14 years)</li>
+                <li><b>Schools Attended:</b>
+                    <ul>
+                        <li>Sekolah Agama Bandar Tangkak (SABT)</li>
+                    </ul>
+                </li>
+                <li><b>Current Education:</b> Melaka International College of Science and Technology (Micost)</li>
+                <li><b>Shared Interests:</b> K-drama and K-pop (watch together virtually with others)</li>
+                <li><b>Hobbies:</b>
+                    <ul>
+                        <li>Reading</li>
+                        <li>Watching K-drama</li>
+                    </ul>
+                <li><b>Academic Achievement:</b> Dean's List (last semester)</li>
+                <li><b>Fun Fact:</b> Maintained a friendship for 14 years despite not hanging out in person after primary school due to strict parents. Bonded through video calls, even if it meant just staring at each other for hours.</li>
+                <li><b>Future Promise:</b> Remain close friends forever ("until our last breath and continue it at Jannah, Insyaallah")</li>
+<br>
+            <a href="https://www.instagram.com/hhhudaaa_/">
+                <img src="image/instagram.png" alt="Huda Instagram">
+            </a>
+        </div>
+    </div>
+<footer class="w3-container w3-center w3-xlarge" style="padding: 8px;">
+    <a href="https://www.linkedin.com/in/nurul-zafirah-nazaruddin-6a32062b7/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/zaffieegyu/"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/ZafirahNazaruddin"><i class="fa fa-github"></i></a>
+    <p style="font-size:14px; color: white;">
+        &copy; 2024 Nurul Zafirah. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>

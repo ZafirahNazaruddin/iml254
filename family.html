@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>My Personal Website</title>
+    <style type="text/css">
+
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        body {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWY4MmpoM2lyeHBtNTNmd2Z2YmFpdzRmcmFqNzAycGg2bHdwc3Z5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FlodpfQUBSp20/giphy.gif');
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #logo-container img {
+            max-height: 50px;
+            width: auto;
+        }
+
+        /* Navigation styles */
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold; /* Make the navigation text bold */
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar li a:hover {
+            color: #E55089;
+            transition: background-color 0.3s ease, color 0.3s ease;
+         }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+                    color: #E55089;
+        }
+
+        .education-image {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 100%; /* Set maximum width to ensure responsiveness */
+            height: auto;
+            display: block; /* Ensure images are block-level elements */
+            margin: 0 auto; /* Center the images horizontally */
+        }
+
+        .text-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center align text */
+        }
+
+        .text-content h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #E55089;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* Center align h1 and p */
+        h1,
+        p {
+            color: #ffffff;
+            text-align: center;
+
+        }
+
+        /* Style for the video section */
+        .vid_fam {
+            text-align: center;
+            color: #E55089;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        iframe {
+            width: 200%; /* Make the video fill the page */
+            max-width: 800px; /* Set maximum width */
+            height: 400px; /* Set height */
+            display: block; /* Ensure the video is a block-level element */
+            margin: 0 auto; /* Center the video horizontally */
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ffffff;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        footer .social-icons a:hover {
+            color: #E55089;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .main-content {
+            font-weight: bold;
+            color: #E55089;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Zaffy Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+<br>
+    <h1 class="main-content">˚ʚ♡ɞ˚MY BELOVED FAMILY˚ʚ♡ɞ˚</h1>
+<br>
+    <div class="content">
+        <div class="text-content">
+            <h2>MOHD NAZARUDDIN BIN TAIB</h2>
+            <p>My father</p>
+            <p>My Father was a principal at Sekolah Agama Serom 8.</p>
+ <p>Have you ever heard about "father is a daughter's first love"? If yes, then we all agree on that statement, right? same as me. My father is my first love because of how caring he is, kind, and gentlemanly.
+He has been my role model since I was a kid. Wanna know why? Because of how busy he is, he will always find time to spend time with us and take care of us on his own. He said, "I don't want anyone else to take care of my kids besides mom and dad because not all nannies can be trusted." Also, when he gets mad at us, he will scold us, but at the end, he will apologise and tell us about the story of prophet Muhammad and his friends so we can take a lesson from the story.  </p>
+        </div>
+        <img class="education-image" src="image/dad.jpg" alt="My Father">
+        
+        <img class="education-image" src="image/mother.jpg" alt="My Mother">
+        <div class="text-content">
+            <h2>NORHASHIMA BINTI SIMON</h2>
+            <p>My Mother</p>
+            <p>My mother used to teach Malay in Primary School (SKS 3), but now she is retired.</p>
+            <p>She used to be a library teacher at SK Serom 3 (SKS 3)</p>
+            <p>She is a soft-hearted person but at the same time, she is very fierce. Have you ever heard of this quote?" A mother's love is the foundation that her child's life is built on"." A mother's love is the safety net that catches us when we fall". "A mother's love is more beautiful than any fresh flower". This quote suits my mother the best because every time I have a hard time dealing with emotions, she will come and hug me tightly until I am calm. </p>
+        </div>
+        
+        <div class="text-content">
+            <h2>MOHD HAZIQ AIMAN BIN MOHD NAZARUDDIN</h2>
+            <p>My Brother</p>
+            <p>My brother is studying software engineering at UTHM Batu Pahat</p>
+            <p>Having him as my brother is such a blessing for me. Having him is like having a guardian angel. he will always be there to protect me and guide me when I don't know where to go. He always helps me learn especially science and anything related to science and computer subjects. He will always be there to help me understand the subject and I got an A for my science subject in SPM because of him.</p>
+            <p>“I don’t believe an accident of birth makes people sisters or brothers. It makes them siblings, gives them mutuality of parentage. Sisterhood and brotherhood is a condition people have to work at.”—Maya Angelou</p>
+        </div>
+        <img class="education-image" src="image/brother.jpg" alt="My Brother">
+        
+        <img class="education-image" src="image/sister.jpg" alt="My Younger Sister">
+        <div class="text-content">
+            <h2>NURUL ZAHIDAH BINTI MOHD NAZARUDDIN</h2>
+            <p>My Younger Sister</p>
+            <p>She is a gifted child in our family</p>
+            <p>Why did I call her a gifted child? because she is extremely smart, especially in Arabic or religious subjects like Usuluddin and Syariah. She just finished SPM at SMA Lughatul Quran and guess what? She got an A in almost all Arabic subjects! Incredible right? She is also so good at sports, indoor and outdoor games! She once won the top 10 in chess for Majlis Sukan Sekolah Daerah (MSSD) and not just that, she also got top 5 in a ping pong competition for Majlis Sukan Sekolah Daerah (MSSD)</p>
+             <p>“Having a sister is like having a best friend you can’t get rid of. You know whatever you do, they’ll still be there.”
+—Amy Li</p>
+           <p>My younger sister is also my gossip partner hehe. We can talk for hours nonstop especially when we did not meet each other in a long time. She will always be my best partner in crime for sure.</p>
+        </div>
+    </div>
+
+<br><br>
+<h1 class=vid_fam>Traveling with my family</h1>
+    <p>My family love going travel in the country or to another country so we can relax and spend time with each other on holidays</p>
+       <br><br>
+        <!--Youtube-->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/g-hNT8hMRbA?si=dyWOUkt9j6jsJaBl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c5hS9mQ3lpA?si=ItiPT55xU6gRL0EO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Travel to Batam Indonesia with my family♡</p>
+
+<br><br>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/hvQUjy3My4o?si=IY-wa-OJGXE-V1aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Travel to tasek Bera,Pahang♡</p>
+
+<footer class="w3-container w3-center w3-xlarge" style="padding: 8px;">
+    <a href="https://www.linkedin.com/in/nurul-zafirah-nazaruddin-6a32062b7/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/zaffieegyu/"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/ZafirahNazaruddin"><i class="fa fa-github"></i></a>
+    <p style="font-size:14px; color: white;">
+        &copy; 2024 Nurul Zafirah. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>My Personal Website</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            font-weight: bold; /* Make all text bold */
+        }
+
+        body {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWY4MmpoM2lyeHBtNTNmd2Z2YmFpdzRmcmFqNzAycGg2bHdwc3Z5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FlodpfQUBSp20/giphy.gif');
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #logo-container img {
+            max-height: 50px;
+            width: auto;
+        }
+
+        /* Navigation styles */
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar li a:hover {
+            color: #E55089;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Main content styles */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .left-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .right-content {
+            flex: 2;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .right-content .subheading {
+            margin-bottom: 20px;
+        }
+
+        .contact-form, .contact-info, .social-media, .map {
+            margin-bottom: 30px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #000; /* Text color */
+            background-color: #fff; /* Background color */
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #E55089;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #d63a6b;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ffffff;
+            background-color: transparent; /* Ensure no background color */
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        footer .social-icons a:hover {
+            color: #E55089;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            #header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar {
+                margin-top: 10px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar li {
+                margin: 5px 0;
+            }
+
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content, .right-content {
+                padding: 0;
+                width: 100%;
+            }
+
+            .right-content {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var subject = "Contact Form Submission from " + name;
+            var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+            window.location.href = "mailto:zafirah.nazaruddin@gmail.com?subject=" + subject + "&body=" + body;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Zaffy Logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="left-content">
+            <img src="image/ZafirahNazaruddin.png" alt="Zafirah">
+        </div>
+        <div class="right-content">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form onsubmit="sendEmail(); return false;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Email: <a href="mailto:zafirah.nazaruddin@gmail.com">zafirah.nazaruddin@gmail.com</a></p>
+                <p>Phone: <a href="tel:+601114512660">+60 11-1451 2660</a></p>
+                <p>Address: 31, Jalan Cempaka 2, Taman Cempaka, 84400 Sungai Mati, Johor</p>
+            </div>
+
+            <div class="social-media">
+                <h2>Follow Me</h2>
+                <a href="https://www.instagram.com/zaffieegyu/"><img src="image/instagram.png" alt="Zaf Instagram"></a>
+                <a href="https://www.tiktok.com/@fylycio"><img src="image/tiktok.png" alt="Zaf Instagram"></a>               
+                 <a href="https://www.linkedin.com/in/nurul-zafirah-nazaruddin-6a32062b7/"><img src="image/linkdn.jpg" alt="Zaf Linkdn"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-center">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nurul-zafirah-nazaruddin-6a32062b7/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/zaffieegyu/"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/ZafirahNazaruddin"><i class="fa fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Nurul Zafirah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
